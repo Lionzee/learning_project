@@ -21,6 +21,9 @@ Route::namespace('API')->group(function () {
         Route::get('/user', 'UserController@getAuthenticatedUser');
         Route::post('/profile', 'UserController@editProfile');
         Route::get('/profile', 'UserController@getProfile');
+
+        Route::post('/topic', 'TopicController@store');
+
     });
 
 });
