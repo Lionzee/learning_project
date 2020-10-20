@@ -19,10 +19,6 @@ class TopicController extends Controller
                 ->where('is_public',true)
                 ->paginate(8);
 
-            /*$data = Topic::orderBy('id','DESC')
-                ->where('title','LIKE',"%$request->search%")
-                ->where('is_public',true)
-                ->paginate(8);*/
         }else{
             $data = Topic::orderBy('id','DESC')
                 ->where('is_public','1')
