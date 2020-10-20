@@ -22,7 +22,13 @@ Route::namespace('API')->group(function () {
         Route::post('/profile', 'UserController@editProfile');
         Route::get('/profile', 'UserController@getProfile');
 
+        Route::get('/topic', 'TopicController@index');
         Route::post('/topic', 'TopicController@store');
+        Route::post('/topic/{topic_id}', 'TopicController@update');
+        Route::delete('/topic/delete/{topic_id}', 'TopicController@destroy');
+
+
+
 
     });
 
