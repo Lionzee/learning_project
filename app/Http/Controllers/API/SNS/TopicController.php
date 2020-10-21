@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\API\SNS;
 
 use App\Models\Topic;
 use Illuminate\Http\Request;
@@ -85,6 +85,23 @@ class TopicController extends Controller
             return response()->json([
                 "errorCode" => "05",
                 "message" => "failed edit topic : can't find any topic"
+            ]);
+        }
+    }
+
+    public function copy($topic_id){
+        if(!Topic::checkOwner($topic_id)){
+            $data = Topic::copyTopic($topic_id);
+
+            return response()->json([
+                "errorCode" => "00",
+                "message" => "copy success : topic copied",
+                "data" => $data,
+            ]);
+        }else{
+            return response()->json([
+                "errorCode" => "04",
+                "message" => "failed copy topic : duplicate entry"
             ]);
         }
     }

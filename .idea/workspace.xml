@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eb23b089-a9ad-457e-84ac-4f52dc545496" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TopicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SNS/TopicController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Note.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Note.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoleSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/TopicSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TopicSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +138,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\TA\learning_project\app\Http\Controllers\API" />
+      <recent name="E:\Workspace\TA\learning_project\app\Http\Controllers\API\SNS" />
       <recent name="E:\Workspace\TA\learning_project\app\Models" />
       <recent name="E:\Workspace\TA\learning_project\app\Http\Models" />
     </key>
@@ -165,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602075945822</updated>
       <workItem from="1602075948177" duration="1202000" />
-      <workItem from="1602768009963" duration="35169000" />
+      <workItem from="1602768009963" duration="63099000" />
     </task>
     <servers />
   </component>
@@ -177,10 +184,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603168883486" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603163539519">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603171539140">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603163539519" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603171539140" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1602822056793">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -193,9 +200,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1603166131006" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602783851174">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603171532167">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1602783851174" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1603171532167" />
   </component>
 </project>

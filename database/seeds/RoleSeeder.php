@@ -12,11 +12,7 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        Role::create(
-            [
-                'name' => 'SUPERADMIN'
-            ]
-        );
+
 
         Role::create(
             [
@@ -27,6 +23,12 @@ class RoleSeeder extends Seeder
         Role::create(
             [
                 'name' => 'USER'
+            ]
+        );
+
+        Role::create(
+            [
+                'name' => 'SUPERADMIN'
             ]
         );
     }
