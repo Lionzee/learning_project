@@ -44,6 +44,13 @@ Route::namespace('API')->group(function () {
             Route::post('/like/{topic_id}','LikeController@store');
             Route::delete('/unlike/{topic_id}','LikeController@unlike');
             Route::get('/topic/{topic_id}/like-details','LikeController@likeDetails');
+
+            Route::get('/topic/{topic_id}/comment','CommentController@getComment');
+            Route::post('/topic/{topic_id}/comment','CommentController@store');
+            Route::post('/comment/{comment_id}/edit','CommentController@edit');
+            Route::delete('/comment/{comment_id}/delete','CommentController@delete');
+
+
         });
 
     });

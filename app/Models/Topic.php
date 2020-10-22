@@ -59,6 +59,10 @@ class Topic extends Model
         return $new_topic;
     }
 
+    public static function getFeeds(){
+
+    }
+
     public function getLikesCountAttribute(){
         $count = count(Like::where('topic_id',$this->id)->get());
         return $count;
@@ -73,7 +77,12 @@ class Topic extends Model
         return $status;
     }
 
-    public $appends = ['like_status','likes_count'];
+    public function getCommentsCountAttribute(){
+        $count = count(Comment::where('topic_id',$this->id)->get());
+        return $count;
+    }
+
+    public $appends = ['like_status','likes_count','comments_count'];
 
 
 }
