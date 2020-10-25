@@ -35,84 +35,55 @@
 
 <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu preload-transitions 2-columns" data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
 
+<!-- BEGIN: Header-->
 <header class="page-topbar" id="header">
     <div class="navbar navbar-fixed">
-        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+        <nav class="navbar-main navbar-color nav-collapsible navbar-dark gradient-45deg-indigo-purple no-shadow nav-expanded sideNav-lock">
             <div class="nav-wrapper">
-                <div class="header-search-wrapper hide-on-med-and-down">
-                </div>
                 <ul class="navbar-list right">
-                    <li>
-
-                    </li>
+                    <li class="dropdown-language"><a class="waves-effect waves-block waves-light translation-button" href="#" data-target="translation-dropdown"><span class="flag-icon flag-icon-gb"></span></a><ul class="dropdown-content" id="translation-dropdown" tabindex="0">
+                            <li class="dropdown-item" tabindex="0"><a class="grey-text text-darken-1" href="#!" data-language="en"><i class="flag-icon flag-icon-gb"></i> English</a></li>
+                            <li class="dropdown-item" tabindex="0"><a class="grey-text text-darken-1" href="#!" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a></li>
+                            <li class="dropdown-item" tabindex="0"><a class="grey-text text-darken-1" href="#!" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></li>
+                            <li class="dropdown-item" tabindex="0"><a class="grey-text text-darken-1" href="#!" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a></li>
+                        </ul></li>
+                    <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="../../../app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span></a><ul class="dropdown-content" id="profile-dropdown" tabindex="0">
+                            <li tabindex="0"><a class="grey-text text-darken-1" href="{{route('logout')}}"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                        </ul></li>
                 </ul>
-            </div>
-            <nav class="display-none search-sm">
-                <div class="nav-wrapper">
+                <!-- translation-button-->
 
-                </div>
-            </nav>
+                <!-- notifications-dropdown-->
+
+                <!-- profile-dropdown-->
+
+            </div>
         </nav>
     </div>
 </header>
+<!-- END: Header-->
+
 
 <!-- BEGIN: SideNav-->
-<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+<aside class="sidenav-main nav-collapsible sidenav-light sidenav-active-square nav-lock">
     <div class="brand-sidebar">
-        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="/home">
-                <span class="logo-text hide-on-med-and-down">SMARTER</span>
-            </a>
-        </h1>
+        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="{{route('admin.home')}}"><img class="hide-on-med-and-down" src="../../../app-assets/images/logo/materialize-logo-color.png" alt="materialize logo"><img class="show-on-medium-and-down hide-on-med-and-up" src="../../../app-assets/images/logo/materialize-logo.png" alt="materialize logo"><span class="logo-text hide-on-med-and-down">Smarter</span></a><a class="navbar-toggler" href="#"></a></h1>
     </div>
-
-    <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
-        <li>
-            <a class="grey-text text-darken-1" href="">
-                <i class="material-icons">home</i> Home
-            </a>
+    <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow ps ps--active-y" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion" style="transform: translateX(0%);">
+        <li class="navigation-header"><a class="navigation-header-text">Home</a><i class="navigation-header-icon material-icons">more_horiz</i>
+        <li class="active bold"><a class="waves-effect waves-cyan active " href="{{route('admin.home')}}"><i class="material-icons">dashboard</i><span class="menu-title">Dashboard</span></a></li>
+        <li class="navigation-header"><a class="navigation-header-text">Admin Menu</a><i class="navigation-header-icon material-icons">more_horiz</i>
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)" tabindex="0"><i class="material-icons">add_shopping_cart</i><span class="menu-title" data-i18n="eCommerce">eCommerce</span></a>
+            <div class="collapsible-body">
+                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                    <li><a href="eCommerce-products-page.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Products Page">Products Page</span></a>
+                    </li>
+                    <li><a href="eCommerce-pricing.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Pricing</span></a>
+                    </li>
+                </ul>
+            </div>
         </li>
-        @if(auth()->user()->role->name == "SUPERADMIN")
-            <li class="bold {{ Request::is('admin*')? "active":"" }}">
-                <a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
-                    <i class="material-icons">people</i>
-                    <span class="menu-title" data-i18n="Menu levels">ADMIN DATA</span>
-                </a>
-                <div class="collapsible-body">
-                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                        <li>
-                            <a class="{{ Request::is('voucher')? "active":"" }} {{ Request::is('voucher/*')? "active":"" }}"href="">
-                                <i class="material-icons"></i>
-                                <span data-i18n="Second level">ADMIN</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        @endif
-        @if(auth()->user()->role->name == "ADMIN" || auth()->user()->role->name == "SUPERADMIN")
-            <li class="bold {{ Request::is('user*')? "active":"" }}">
-                <a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
-                    <i class="material-icons">people</i>
-                    <span class="menu-title" data-i18n="Menu levels">USER DATA</span>
-                </a>
-                <div class="collapsible-body">
-                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                        <li>
-                            <a class="{{ Request::is('user')? "active":"" }} {{ Request::is('user/*')? "active":"" }}"href="">
-                                <i class="material-icons"></i>
-                                <span data-i18n="Second level">USER</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        @endif
-        <li>
-            <a class="grey-text text-darken-1" href="{{ route('logout') }}">
-                <i class="material-icons">keyboard_tab</i> Logout
-            </a>
-        </li>
-    </ul>
+        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 646px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 226px;"></div></div></ul>
     <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
 </aside>
 <!-- END: SideNav-->

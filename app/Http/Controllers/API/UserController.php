@@ -16,6 +16,16 @@ class UserController extends Controller
 {
     public function register(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required',
+            'username' => 'required',
+            'password' => 'required',
+            'display_name' => 'required'
+        ]);
+
+        if ($validator->fails()){
+            return response()->json($validator->errors(), 400);
+        }
 
         $username = User::where('username', $request->username)->first();
         $email = User::where('email', $request->email)->first();

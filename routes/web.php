@@ -11,16 +11,17 @@
 |
 */
 
+Route::namespace('Admin')->name('admin')->group(function (){
+    Route::get('login', 'HomeController@login')->name('login');
+    Route::prefix('admin')->group(function (){
+        Route::get('/home', 'HomeController@index')->name('.home');
+    });
+});
+
 Route::get('/', function () {
     return redirect( route('login')) ;
 });
 
-
-Route::get('/login', 'HomeController@login')->name('login');
-
-
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 Auth::routes();

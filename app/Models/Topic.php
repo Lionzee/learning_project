@@ -59,8 +59,14 @@ class Topic extends Model
         return $new_topic;
     }
 
-    public static function getFeeds(){
+    public static function getThisWeekTopicCount(){
+        $start_week = strtotime("last sunday midnight");
+        $end_week = strtotime("next saturday");
+        $start_week = date("Y-m-d",$start_week);
+        $end_week = date("Y-m-d",$end_week);
 
+        $data = Topic::whereBetween('created_at', [$start_week, $end_week])->get();
+        return count($data);
     }
 
     public function getLikesCountAttribute(){

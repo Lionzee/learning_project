@@ -29,6 +29,8 @@ Route::namespace('API')->group(function () {
             Route::post('/topic/{topic_id}/copy','TopicController@copy');
             Route::delete('/topic/delete/{topic_id}', 'TopicController@destroy');
 
+            Route::get('/feeds','TopicController@feeds');
+
             Route::get('/note','NoteController@index');
             Route::get('/topic/{topic_id}/note','NoteController@getNotes');
             Route::post('/topic/{topic_id}/note','NoteController@store');
@@ -49,7 +51,6 @@ Route::namespace('API')->group(function () {
             Route::post('/topic/{topic_id}/comment','CommentController@store');
             Route::post('/comment/{comment_id}/edit','CommentController@edit');
             Route::delete('/comment/{comment_id}/delete','CommentController@delete');
-
 
         });
 

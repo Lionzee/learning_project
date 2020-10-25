@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API\SNS;
 
+use App\Models\Following;
 use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -104,6 +105,17 @@ class TopicController extends Controller
                 "message" => "failed copy topic : duplicate entry"
             ]);
         }
+    }
+
+    public function feeds(){
+        $following_data = Following::where('user_id',Auth::user()->id)->pluck('target_user');
+        $data = Topic::whereIn('user_id',$following_data)->latest('updated_at')->paginate(10);
+
+        return response()->json([
+            "errorCode" => "00",
+            "message" => "get feeds succed : topic listed",
+            "data" => $data,
+        ]);
     }
 
 
