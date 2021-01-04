@@ -36,6 +36,7 @@ class TopicController extends Controller
 
     public function store(Request $request)
     {
+        dd(Auth::user());
         if(!Topic::where('user_id',Auth::user()->id)->where('title',$request->title)->first()){
             $topic = Topic::create([
                 'user_id' => Auth::user()->id,

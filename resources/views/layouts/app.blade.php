@@ -73,10 +73,10 @@
         <li class="navigation-header"><a class="navigation-header-text">Home</a><i class="navigation-header-icon material-icons">more_horiz</i>
         <li class="active bold"><a class="waves-effect waves-cyan active " href="{{route('admin.home')}}"><i class="material-icons">dashboard</i><span class="menu-title">Dashboard</span></a></li>
         <li class="navigation-header"><a class="navigation-header-text">Admin Menu</a><i class="navigation-header-icon material-icons">more_horiz</i>
-        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)" tabindex="0"><i class="material-icons">add_shopping_cart</i><span class="menu-title" data-i18n="eCommerce">eCommerce</span></a>
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)" tabindex="0"><i class="material-icons">person</i><span class="menu-title" data-i18n="eCommerce">User Data</span></a>
             <div class="collapsible-body">
                 <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                    <li><a href="eCommerce-products-page.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Products Page">Products Page</span></a>
+                    <li><a href="eCommerce-products-page.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Products Page">User</span></a>
                     </li>
                     <li><a href="eCommerce-pricing.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Pricing">Pricing</span></a>
                     </li>

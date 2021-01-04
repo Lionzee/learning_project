@@ -93,6 +93,7 @@ class UserController extends Controller
             "message" => "success",
             "data" => compact('token')
         ]);
+
     }
 
     public function getAuthenticatedUser()
@@ -179,6 +180,7 @@ class UserController extends Controller
     }
 
     public function getProfile() {
+
         $profile = UserProfile::find(auth()->user()->id);
         return response()->json([
             "errorCode" => "00",

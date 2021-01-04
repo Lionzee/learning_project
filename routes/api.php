@@ -17,10 +17,11 @@ Route::namespace('API')->group(function () {
     Route::post('register','UserController@register');
     Route::post('login','UserController@login');
     Route::get('/user', 'UserController@getAuthenticatedUser');
-    Route::post('/profile', 'UserController@editProfile');
-    Route::get('/profile', 'UserController@getProfile');
+
 
     Route::middleware('jwt.verify')->group(function (){
+        Route::post('/profile', 'UserController@editProfile');
+        Route::get('/profile', 'UserController@getProfile');
         Route::namespace('SNS')->group(function (){
 
             Route::get('/topic', 'TopicController@index');

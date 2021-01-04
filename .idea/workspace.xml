@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb23b089-a9ad-457e-84ac-4f52dc545496" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/SNS/TopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SNS/TopicController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -184,6 +175,10 @@
       <workItem from="1602768009963" duration="64857000" />
       <workItem from="1603333368803" duration="13839000" />
       <workItem from="1603420400703" duration="15032000" />
+      <workItem from="1607000628532" duration="2434000" />
+      <workItem from="1607341821266" duration="10750000" />
+      <workItem from="1607741086552" duration="6354000" />
+      <workItem from="1609405189055" duration="10738000" />
     </task>
     <servers />
   </component>
@@ -195,30 +190,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603168883486" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603353318947">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609411446250">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603353318947" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1609411446250" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1602822056793">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1602822056793" />
-    <state x="466" y="182" key="NewPhpClassDialog" timestamp="1603166156519">
+    <state x="466" y="182" key="NewPhpClassDialog" timestamp="1609493420246">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="466" y="182" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1603166156519" />
-    <state x="517" y="303" key="NewPhpFileDialog" timestamp="1603166131006">
+    <state x="466" y="182" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1609493420246" />
+    <state x="517" y="303" key="NewPhpFileDialog" timestamp="1609493446510">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1603166131006" />
+    <state x="517" y="303" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1609493446510" />
     <state x="184" y="26" key="SettingsEditor" timestamp="1603420456249">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1603420456249" />
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1603420411346">
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1609405193044">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1603420411346" />
+    <state x="359" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1609405193044" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1603561167424">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -15,7 +15,11 @@ Route::namespace('Admin')->name('admin')->group(function (){
     Route::get('login', 'HomeController@login')->name('login');
     Route::prefix('admin')->group(function (){
         Route::get('/home', 'HomeController@index')->name('.home');
+        Route::get('/user','UserController@index')->name('.user.index');
+        Route::get('/user/{id}','UserController@show')->name('.user.show');
+        Route::post('/user/{id}','UserController@update')->name('.user.update');
     });
+
 });
 
 Route::get('/', function () {
