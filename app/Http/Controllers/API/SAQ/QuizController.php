@@ -61,5 +61,5 @@ class QuizController extends Controller
             ]);
         }
     }
-        
+    
 }
