@@ -54,7 +54,13 @@ Route::namespace('API')->group(function () {
             Route::delete('/comment/{comment_id}/delete','CommentController@delete');
 
         });
+        Route::namespace('SAQ')->group(function (){
 
+            //Quiz
+            Route::post('/quiz', 'QuizController@store');
+            Route::get('/quiz', 'QuizController@index');
+
+        });
     });
 
 });

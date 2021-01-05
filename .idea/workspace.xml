@@ -4,10 +4,7 @@
     <list default="true" id="eb23b089-a9ad-457e-84ac-4f52dc545496" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/SNS/TopicController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SNS/TopicController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +133,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\TA\learning_project\app\Models" />
       <recent name="E:\Workspace\TA\learning_project\app\Http\Controllers\Admin" />
       <recent name="E:\Workspace\TA\learning_project\resources\views\admin" />
       <recent name="E:\Workspace\TA\learning_project\app\Http\Controllers\API" />
       <recent name="E:\Workspace\TA\learning_project\app\Http\Controllers\API\SNS" />
-      <recent name="E:\Workspace\TA\learning_project\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -178,7 +175,7 @@
       <workItem from="1607000628532" duration="2434000" />
       <workItem from="1607341821266" duration="10750000" />
       <workItem from="1607741086552" duration="6354000" />
-      <workItem from="1609405189055" duration="10738000" />
+      <workItem from="1609405189055" duration="17595000" />
     </task>
     <servers />
   </component>
@@ -190,10 +187,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603168883486" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609411446250">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609743240077">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1609411446250" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1609743240077" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1602822056793">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
