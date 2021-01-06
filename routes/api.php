@@ -59,6 +59,8 @@ Route::namespace('API')->group(function () {
             //Quiz
             Route::post('/quiz', 'QuizController@store');
             Route::get('/quiz', 'QuizController@index');
+            Route::put('/quiz/{quiz_id}','QuizController@update');
+            Route::delete('/quiz/{quiz_id}','QuizController@delete');
 
         });
     });

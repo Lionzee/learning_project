@@ -61,5 +61,54 @@ class QuizController extends Controller
             ]);
         }
     }
-     
+
+    public function update(Request $request,$quiz_id){
+        $validator = Validator::make($request->all(), [
+            'title' => 'required',
+            'desc' => 'required',
+            'is_public' => 'required',
+            'max_question' => 'required'
+        ]);
+
+        if ($validator->fails()){
+            return response()->json($validator->errors(), 400);
+        }
+
+        if(Quiz::isOwner($quiz_id)){
+            $data = Quiz::where('id',$quiz_id)->first();
+            $data->title = $request->title;
+            $data->description = $request->desc;
+            $data->is_public = $request->is_public;
+            $data->max_question = $request->max_question;
+            $data->save();
+
+            return response()->json([
+                "errorCode" => "00",
+                "message" => "success updata quiz",
+                "data" => $data
+            ],200);
+
+        }else{
+            return response()->json([
+                "errorCode" => "05",
+                "message" => "failed to update : can't find any quiz"
+            ],403);
+        }
+    }
+
+    public function delete($quiz_id){
+        if(Quiz::isOwner($quiz_id)){
+            $data = Quiz::find($quiz_id);
+            $data->delete();
+            return response()->json([
+                "errorCode" => "00",
+                "message" => "quiz deleted !"
+            ],200);
+        }else{
+            return response()->json([
+                "errorCode" => "05",
+                "message" => "failed to delete : can't find any quiz"
+            ],403);
+        }
+    }
 }
