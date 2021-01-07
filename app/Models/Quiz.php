@@ -17,6 +17,10 @@ class Quiz extends Model
         'title'
     ];
 
+    public function question(){
+        return $this->hasMany(Question::class, 'quiz_id','id');
+    }
+
     public static function is_exist($title){
         $quiz = Quiz::where('title',$title)->first();
         if($quiz){
@@ -39,4 +43,6 @@ class Quiz extends Model
             return false;
         }
     }
+
+
 }

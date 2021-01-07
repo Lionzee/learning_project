@@ -62,6 +62,13 @@ Route::namespace('API')->group(function () {
             Route::put('/quiz/{quiz_id}','QuizController@update');
             Route::delete('/quiz/{quiz_id}','QuizController@delete');
 
+            //Question
+            Route::post('/question', 'QuestionController@store');
+            Route::get('/question}', 'QuestionController@getQuestion');
+            Route::put('/question/{question_id}','QuestionController@update');
+            Route::delete('/question/{question_id}','QuestionController@delete');
+
+
         });
     });
 
