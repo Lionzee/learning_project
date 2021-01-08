@@ -44,5 +44,10 @@ class Quiz extends Model
         }
     }
 
+    public static function getMaxQuestion($quiz_id){
+        $quiz = Quiz::where('id',$quiz_id)->first();
+        return $quiz->max_question;
+    }
+
 
 }

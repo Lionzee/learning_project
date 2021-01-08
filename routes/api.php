@@ -64,7 +64,7 @@ Route::namespace('API')->group(function () {
 
             //Question
             Route::post('/question', 'QuestionController@store');
-            Route::get('/question}', 'QuestionController@getQuestion');
+            Route::get('/question', 'QuestionController@getQuestion');
             Route::put('/question/{question_id}','QuestionController@update');
             Route::delete('/question/{question_id}','QuestionController@delete');
 

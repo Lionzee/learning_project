@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="eb23b089-a9ad-457e-84ac-4f52dc545496" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/SAQ/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SAQ/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_06_104208_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_104208_create_questions_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +178,7 @@
       <workItem from="1607341821266" duration="10750000" />
       <workItem from="1607741086552" duration="6354000" />
       <workItem from="1609405189055" duration="23995000" />
-      <workItem from="1609936146137" duration="3350000" />
+      <workItem from="1609936146137" duration="11563000" />
     </task>
     <servers />
   </component>
@@ -190,10 +190,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603168883486" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609743240077">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610033136016">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1609743240077" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1610033136016" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1602822056793">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

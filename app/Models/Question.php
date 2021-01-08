@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Question extends Model
 {
@@ -13,4 +14,16 @@ class Question extends Model
     public function quiz(){
         return $this->belongsTo(Quiz::class, 'quiz_id','id');
     }
+
+    public static function isDuplicate($quiz_id,$body){
+        $data = Question::where('body',$body)->where('quiz_id',$quiz_id)->first();
+        if($data){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+
 }
