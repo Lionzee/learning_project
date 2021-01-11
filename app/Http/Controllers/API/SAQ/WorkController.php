@@ -22,7 +22,7 @@ class WorkController extends Controller
         $work = Work::create([
             'user_id' => Auth::user()->id,
             'quiz_id' => $request->quiz_id,
-        ]);    
+        ]);     
 
         Answer::createSheet($work->id);
 
