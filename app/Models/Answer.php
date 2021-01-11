@@ -10,6 +10,19 @@ class Answer extends Model
 
     protected $fillable = ['work_id','question_id','answer','time_in_sec','is_correct'];
 
+    public static function createSheet($work_id){
+        $work = Work::where('id',$work_id)->first();
+        $quiz = Quiz::where('id',$work->quiz_id)->first();
+
+        $questions = Question::where('quiz_id',$quiz->id)->inRandomOrder()->limit($quiz->max_question)->pluck('id');
+        for($i=0;$i<count($questions);$i++){
+            $answer = Answer::create([
+                'work_id' => $work_id,
+                'question_id' => $questions[$i],
+            ]);
+        }
+    }
+
     public function work(){
         return $this->belongsTo(Work::class, 'work_id','id');
     }

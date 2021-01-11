@@ -68,6 +68,12 @@ Route::namespace('API')->group(function () {
             Route::put('/question/{question_id}','QuestionController@update');
             Route::delete('/question/{question_id}','QuestionController@delete');
 
+            //Work
+            Route::post('/work', 'WorkController@store');
+            Route::get('/work', 'WorkController@myWork');
+            Route::put('/work/{work_id}','WorkController@update');
+            Route::delete('/work/{work_id}','WorkController@delete');
+
 
         });
     });

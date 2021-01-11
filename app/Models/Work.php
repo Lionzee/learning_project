@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Work extends Model
 {
-    protected $table = 'wprks';
+    protected $table = 'works';
 
     protected $fillable = ['user_id','quiz_id','is_visible','is_finished','total_time'];
 

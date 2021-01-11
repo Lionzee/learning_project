@@ -22,8 +22,8 @@ class CreateAnswersTable extends Migration
             $table->boolean('is_correct')->default(false);
             $table->timestamps();
 
-            $table->foreign('question_id')
-                ->references('id')->on('questions')
+            $table->foreign('work_id')
+                ->references('id')->on('works')
                 ->onDelete('cascade');
         });
     }
