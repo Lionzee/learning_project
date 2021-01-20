@@ -23,11 +23,20 @@ class Answer extends Model
         }
     }
 
+    public static function isCorrect($question_id,$answer){
+        $question = Question::where('id',$question_id)->first();
+        if($answer == $question->correct_answer){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public function work(){
         return $this->belongsTo(Work::class, 'work_id','id');
     }
 
     public function question(){
-        return $this->hasOne(Question::class, 'question_id','id');
+        return $this->hasOne(Question::class, 'id','question_id');
     }
 }

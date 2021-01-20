@@ -75,6 +75,12 @@ Route::namespace('API')->group(function () {
             Route::delete('/work/{work_id}','WorkController@delete');
 
 
+            //Answer Sheet
+            Route::get('/answer/sheet', 'AnswerController@getSheet');
+            Route::put('/answer/{answer_id}','AnswerController@update');
+
+
+
         });
     });
 
