@@ -61,6 +61,8 @@ Route::namespace('API')->group(function () {
             Route::get('/quiz', 'QuizController@index');
             Route::put('/quiz/{quiz_id}','QuizController@update');
             Route::delete('/quiz/{quiz_id}','QuizController@delete');
+            Route::get('/my-quiz', 'QuizController@myQuiz');
+
 
             //Question
             Route::post('/question', 'QuestionController@store');
@@ -79,7 +81,9 @@ Route::namespace('API')->group(function () {
             Route::get('/answer/sheet', 'AnswerController@getSheet');
             Route::put('/answer/{answer_id}','AnswerController@update');
 
-
+            //Rating
+            Route::post('/rating', 'RatingController@store');
+            Route::get('/quiz/{quiz_id}/rating','RatingController@getQuizRating');
 
         });
     });

@@ -111,4 +111,17 @@ class QuizController extends Controller
             ],403);
         }
     }
+
+    public function myQuiz(){
+        $quiz = Quiz::with('ratings')->where('user_id',Auth::user()->id)->get();
+        if($quiz){
+            return response()->json([
+                "errorCode" => "00",
+                "message" => "success get paket soal data",
+                "data" => $quiz
+            ]);
+        }
+
+    }
+
 }

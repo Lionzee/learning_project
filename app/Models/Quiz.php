@@ -17,12 +17,29 @@ class Quiz extends Model
         'title'
     ];
 
+    protected $hidden = [
+        'created_at', 'updated_at',
+    ];
+
     public function question(){
         return $this->hasMany(Question::class, 'quiz_id','id');
     }
 
     public function works(){
         return $this->hasMany(Work::class, 'quiz_id','id');
+    }
+
+    public function ratings(){
+        return $this->hasMany(Rating::class, 'quiz_id','id');
+    }
+
+    public function getAvgRatingAttribute(){
+        $rating = Rating::where('quiz_id',$this->id)->avg('rate');
+        if($rating){
+            return $rating;
+        }else{
+            return 0;
+        }
     }
 
     public static function is_exist($title){
@@ -52,6 +69,6 @@ class Quiz extends Model
         $quiz = Quiz::where('id',$quiz_id)->first();
         return $quiz->max_question;
     }
-
+    public $appends = ['avg_rating'];
 
 }
